@@ -157,6 +157,7 @@ body {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -169,6 +170,7 @@ body {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover,
@@ -430,7 +432,7 @@ body {
   border-radius: 4px;
   color: #8e8f99;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1) r;
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -556,7 +558,8 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
   transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    background 0.35s cubic-bezier(0.4, 0, 0.2, 1), border 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -577,8 +580,8 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.projects-items:hover .project-overlay-paragraph,
-.projects-items:focus .project-overlay-paragraph {
+.link:hover .project-overlay-paragraph,
+.lnik:focus .project-overlay-paragraph {
   transform: translateY(0);
 }
 
@@ -602,6 +605,7 @@ body {
 
 .project-shadow {
   display: block;
+  transition: box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-shadow:hover,
@@ -657,7 +661,9 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   background: var(--footer-para-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -665,6 +671,9 @@ body {
   cursor: pointer;
   transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     background 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .modal-close:hover,
