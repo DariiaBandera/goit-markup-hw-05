@@ -662,6 +662,15 @@ body {
   background: var(--footer-para-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--main-title-color);
+  background-color: var(--title-hover-color);
 }
 
 .is-hidden {
